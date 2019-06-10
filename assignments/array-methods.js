@@ -84,12 +84,17 @@ const findShirtSize = (arr = runners, size = "L") => {
   });
   return newSizeArr;
 }
-console.table(findShirtSize());
+// console.table(findShirtSize());
 
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations into a ticketPriceTotal array and log the result
-let ticketPriceTotal = [];
-console.log(ticketPriceTotal);
+const sumDonations = (arr = runners) => {
+  const ticketPriceTotal = arr.reduce((acc, element) => {
+    return element.donation += acc;
+  }, 0);
+  return ticketPriceTotal;
+}
+console.log(sumDonations());
 
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
