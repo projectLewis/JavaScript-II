@@ -63,7 +63,7 @@ const namedArray = (arr = runners) => {
   });
   return fullName;
 }
-// console.table(namedArray());
+console.table(namedArray());
 
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runner's first names converted to uppercase because the director BECAME DRUNK WITH POWER. Convert each first name into all caps and log the result
@@ -74,7 +74,7 @@ const toCaps = (arr = runners) => {
   });
   return allCaps;
 }
-// console.table(toCaps());
+console.table(toCaps());
 
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.  Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
@@ -84,7 +84,7 @@ const findShirtSize = (arr = runners, size = "L") => {
   });
   return newSizeArr;
 }
-// console.table(findShirtSize());
+console.table(findShirtSize());
 
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations into a ticketPriceTotal array and log the result
